@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body{
-    background: #f1faee;
+    background: #fffcf2;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
 }
