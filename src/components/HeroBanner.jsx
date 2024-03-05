@@ -31,7 +31,7 @@ const HeroBanner = () => {
       <img
         src={Heropic}
         alt="banner"
-        className="absolute hidden lg:block right-[0px] top-[0px] mt-[-140px] h-screen w-auto"
+        className="absolute hidden lg:block right-[0px] top-[0px] mt-[-140px] h-screen w-auto rounded-bl-[80px] rounded-tl-[80px]"
       />
     </div>
   );
