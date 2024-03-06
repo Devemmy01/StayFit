@@ -8,6 +8,7 @@ const SearchExercises = () => {
     try {
       if (search) {
         const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPart/back', exerciseOptions);
+        
         console.log(exercisesData);
       }
     } catch (error) {
