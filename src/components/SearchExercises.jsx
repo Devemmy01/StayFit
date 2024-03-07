@@ -3,7 +3,22 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
-  const [exercises, setExercises] = useState([]); // [1
+  const [exercises, setExercises] = useState([]); 
+  const [bodyParts, setBodyParts] = useState([]);
+
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      try {
+        const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
+
+        setBodyParts(['all', ...bodyPartsData]);
+      } catch (error) {
+        console.log('Error fetching data:', error);
+      }
+    }
+
+    fetchExercisesData();
+  }, [])
 
   const handleSearch = async () => {
     try {
