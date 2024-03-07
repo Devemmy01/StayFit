@@ -3,13 +3,21 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
+  const [exercises, setExercises] = useState([]); // [1
 
   const handleSearch = async () => {
     try {
       if (search) {
-        const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPart/back', exerciseOptions);
+        const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
         
-        console.log(exercisesData);
+        const searchedExercises = exercisesData.filter((exercise) => exercise.name.toLocaleLowerCase().include(search)
+        || exercise.target.toLocaleLowerCase().include(search)
+        || exercise.equipment.toLocaleLowerCase().include(search)
+        || exercise.bodyPart.toLocaleLowerCase().include(search)
+        );
+
+        setSearch('');
+        setExercises('searchedExercises');
       }
     } catch (error) {
       console.error('Error fetching data:', error);
