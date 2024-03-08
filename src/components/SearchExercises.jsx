@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 
+import BodyPartCategory from "./BodyPartCategory";
+
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
   const [exercises, setExercises] = useState([]); 
@@ -55,6 +57,10 @@ const SearchExercises = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())}
         />
+      </div>
+
+      <div className="relative w-full p-[20px]">
+        <BodyPartCategory data={bodyParts} />
       </div>
     </div>
   );

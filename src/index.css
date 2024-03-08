@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background: #fefcfb;
-}
 * {
     padding: 0px;
     margin: 0px;

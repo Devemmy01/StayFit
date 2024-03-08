@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 const Navbar = () => {
   return (
