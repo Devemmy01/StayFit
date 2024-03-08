@@ -1,8 +1,17 @@
 import React from 'react'
+import BodyPart from './BodyPart'
 
-const BodyPartCategory = () => {
+const BodyPartCategory = ( { data } ) => {
   return (
-    <div>BodyPartCategory</div>
+    <div>
+      {data.map((item) => (
+        <div key={item.id || item}
+        itemId={item.id || item}
+        title={item.id || item} className='text-[#001219] dark:text-[#fefcfb]' >
+          <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+        </div>
+      ))}
+    </div>
   )
 }
 

@@ -6,5 +6,23 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* overflow: hidden; */
+    @apply transition-colors duration-300;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3.4px;
+    height: 4px;
+}
   
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1c4e8069;
+    border-radius: 5px;
 }

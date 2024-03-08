@@ -5,13 +5,13 @@ const HeroBanner = () => {
   return (
     <div className="flex relative p-[30px] mt-10 md:mt-16">
       <div className="w-full">
-        <p className="text-2xl md:text-3xl font-Marker font-[500] text-[#001219]">
+        <p className="text-2xl md:text-3xl font-Marker font-[500] text-[#001219] dark:text-[#fefcfbb7]">
           Transform your body
         </p>
-        <p className="font-[900] text-6xl md:text-8xl font-Ojuju text-[#001219]">
+        <p className="font-[900] text-6xl md:text-8xl font-Ojuju text-[#001219] dark:text-[#fefcfb]">
           Sweat, smile <br /> and repeat
         </p>
-        <p className="font-Marker pt-4 text-xl text-[#001219]">
+        <p className="font-Marker pt-4 text-xl text-[#001219] dark:text-[#fefcfbb7]">
           Explore the most effective exercises
         </p>
         <button
