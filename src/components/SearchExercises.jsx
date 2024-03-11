@@ -3,9 +3,8 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 import BodyPartCategory from "./BodyPartCategory";
 
-const SearchExercises = () => {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
   const [search, setSearch] = useState("");
-  const [exercises, setExercises] = useState([]); 
   const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
@@ -60,7 +59,7 @@ const SearchExercises = () => {
       </div>
 
       <div className="relative w-full p-[20px]">
-        <BodyPartCategory data={bodyParts} />
+        <BodyPartCategory data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
       </div>
     </div>
   );
