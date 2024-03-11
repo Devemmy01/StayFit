@@ -26,3 +26,33 @@
     background: #1c4e8069;
     border-radius: 5px;
 }
+
+.exercise-card {
+    width: 400px;
+    /* height: 445px; */
+    background: #fff;
+    border-top: 4px solid #ffd60a;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 20px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-card img {
+    height: 326px;
+  }
+  
+  .bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-card:hover,
+  .bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+  }

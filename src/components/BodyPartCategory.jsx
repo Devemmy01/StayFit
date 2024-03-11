@@ -1,7 +1,7 @@
 import React from 'react'
 import BodyPart from './BodyPart'
 
-const BodyPartCategory = ( { data, bodyPart, setBodyPart } ) => {
+const BodyPartCategory = ({ data, bodyPart, setBodyPart }) => {
   return (
     <div className='flex items-center justify-center flex-wrap mt-[-2rem] md:mt-0'>
       {data.map((item) => (

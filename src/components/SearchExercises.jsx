@@ -4,33 +4,27 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 import BodyPartCategory from "./BodyPartCategory";
 
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
     const fetchExercisesData = async () => {
-      try {
-        const bodyPartsData = await fetchData(
-          "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
-          exerciseOptions
-        );
+      const bodyPartsData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        exerciseOptions
+      );
 
-        setBodyParts(["all", ...bodyPartsData]);
-      } catch (error) {
-        console.log("Error fetching data:", error);
-      }
-    };
+      setBodyParts(['all', ...bodyPartsData]);
+    }
 
     fetchExercisesData();
   }, []);
 
   const handleSearch = async () => {
-
-    
     try {
       if (search) {
         const exercisesData = await fetchData(
-          "https://exercisedb.p.rapidapi.com/exercises",
+          "https://exercisedb.p.rapidapi.com/exercises?limit=200",
           exerciseOptions
         );
 
@@ -44,6 +38,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
         setSearch("");
         setExercises(searchedExercises);
+
       }
     } catch (error) {
       console.error("Error fetching data:", error);
