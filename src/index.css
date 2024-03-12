@@ -6,6 +6,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     /* overflow: hidden; */
     @apply transition-colors duration-300;
 }
@@ -53,6 +54,23 @@
   }
   
   .exercise-card:hover,
-  .bodyPart-card:hover {
+  .bodyPart-card:hover,
+  .detail-card:hover {
     transform: scale(1.1, 1.1);
+  }
+
+  .detail-card{
+    width: 450px;
+    background: #fff;
+    border-top: 4px solid #ffd60a;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-decoration: none;
+    justify-content: space-between; 
+    padding-bottom: 20px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  .detail-card img {
+    height: 406px;
   }
