@@ -71,3 +71,11 @@
     transition: 0.3s all ease-in-out;
   }
   
+  .exercise-video {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* width: ;  */
+    /* height: ;  */
+    text-decoration: none;
+  }
