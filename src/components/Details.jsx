@@ -30,10 +30,10 @@ const Details = ({ exerciseDetail }) => {
           doing it.
         </h6>
 
-        <div className="flex flex-col md:flex-row w-full gap-5">
+        <div className="flex flex-wrap w-full gap-5">
         {extraDetail.map((item) => (
-          <div key={item.name} className="">
-            <p className="text-xl  bg-[#370617] text-[#fff] font-Marker capitalize p-3 rounded-full">
+          <div key={item.name} className=" w-fit">
+            <p className="p-2 md:text-xl bg-[#370617] text-[#fff] font-Marker capitalize md:p-3 rounded-full">
               {item.name}
             </p>
           </div>
