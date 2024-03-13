@@ -60,7 +60,6 @@
   }
 
   .detail-card{
-    width: 450px;
     background: #fff;
     border-top: 4px solid #ffd60a;
     border-bottom-left-radius: 35px;
@@ -71,6 +70,4 @@
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
   }
-  .detail-card img {
-    height: 406px;
-  }
+  
