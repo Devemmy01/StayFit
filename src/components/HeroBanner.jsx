@@ -14,18 +14,15 @@ const HeroBanner = () => {
         <p className="font-Marker pt-4 text-xl text-[#001219] dark:text-[#fefcfbb7]">
           Explore the most effective exercises
         </p>
-        <button
-          className="bg-[#ffd60a] shadow-md h-[43px] w-[140px] font-[600] font-Marker mt-6  rounded-[5px]"
-          href="#exercises"
-        >
-          Click here
-        </button>
+        <a href="#exercises" className="cursor-pointer">
+          <button className="bg-[#ffd60a] shadow-md h-[43px] w-[140px] font-[600] font-Marker mt-6  rounded-[5px]">
+            Click here
+          </button>
+        </a>
 
-        
-          <p className="font-[700] hidden lg:block text-center text-[200px] font-Ojuju opacity-[0.2] text-[#ffd60a] mt-[-60px]">
-            Exercise
-          </p>
-
+        <p className="font-[700] hidden lg:block p-0 text-center text-[250px] font-Ojuju opacity-[0.2] text-[#ffd60a] mt-[50px]">
+          Exercise
+        </p>
       </div>
 
       <img
