@@ -2,7 +2,7 @@ import React from 'react'
 
 const SimilarExercises = () => {
   return (
-    <div>SimilarExercises</div>
+    <div></div>
   )
 }
 
