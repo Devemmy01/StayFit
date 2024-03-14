@@ -63,6 +63,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           placeholder="Search Exercises"
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
+
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') {
+              handleSearch()
+            }
+          }}
         />
       </div>
 
