@@ -1,13 +1,20 @@
+// Importing React module
+
 import React from "react";
 
+// Defining BodyPart functional component with props
 const BodyPart = ({ item, bodyPart, setBodyPart }) => {
+  // Rendering JSX elements
   return (
     <div className="">
+      {/* Button to select body part */}
       <button
         onClick={() => {
+          // Setting selected body part and scrolling to exercises section
           setBodyPart(item);
           window.scrollTo({top: 1800, left: 100, behavior: "smooth"});
         }}
+        // Conditional styling based on selected body part
         className={`${
           bodyPart === item
             ? "bg-[#ffd60a] shadow-md dark:bg-[#fefcfb] dark:text-[#001219]"
@@ -20,4 +27,5 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
   );
 };
 
+// Exporting BodyPart component
 export default BodyPart;
