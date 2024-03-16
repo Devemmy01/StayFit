@@ -22,6 +22,7 @@ const ExerciseDetail = () => {
   // Effect hook to fetch exercise details and videos data
   useEffect(() => {
     const fetchExercisesData = async () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       // API URLs
       const exerciseDbUrl = "https://exercisedb.p.rapidapi.com"
       const youtubeSearchUrl = "https://youtube-search-and-download.p.rapidapi.com"
