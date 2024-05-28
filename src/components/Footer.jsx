@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="https://github.com/Devemmy01" target="_blank">
           <i className="text-4xl text-[#001219] dark:text-[#fff] bx bxl-github cursor-pointer"></i>
         </a>
-        <a href="https://twitter.com/Devemmy25" target="_"blank>
+        <a href="https://twitter.com/Devemmy25" target="_blank">
           <i className="text-4xl text-[#001219] dark:text-[#fff] bx bxl-twitter cursor-pointer"></i>
         </a>
       </div>
