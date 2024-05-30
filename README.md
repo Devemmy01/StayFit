@@ -1,8 +1,8 @@
 <div>
-  <img src="https://github.com/Devemmy01/StayFit/assets/87545460/adccf46f-9377-4d24-9ed1-11c5bd044795" banner="logo" style="width: 290px; height: 100px;">
-</div>
+  <img src="https://github.com/Devemmy01/StayFit/assets/87545460/adccf46f-9377-4d24-9ed1-11c5bd044795" banner="logo" style="width: 260px; height: 100px;">
+</div><br>
 
-![Screenshot from 2024-04-07 01-19-01](https://github.com/Devemmy01/StayFit/assets/87545460/d8cfb37f-4693-42b4-bc93-5c5dd929e691)
+![Screenshot from 2024-05-28 08-24-19](https://github.com/Devemmy01/StayFit/assets/87545460/19cbad2e-0b89-4f27-937f-9750c314a73e)
 
 Stay fit is a fitness website I developed using ReactJS and TailwindCSS after learning more about react hooks and fetching data from unlimited sources using rapid API. The features include Exercise search by name, pody parts, muscle groups and equipments, getting the list of exercises by categories, getting the exercises details, getting videos of the exercise searched, dark mode functionality and full mobile responsiveness.
 
